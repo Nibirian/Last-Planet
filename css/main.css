@@ -99,9 +99,9 @@ body {
   position: relative;
   top: 0;
   height: 100vh;
-  background-image: url(../img/stars\ background\ 1.png);
+  background-image: url(../img/stars\ background2.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   z-index: -10;
 }
@@ -434,7 +434,9 @@ body {
 }
 
 .form {
-  background-color: #01051c;
+  background-image: url(../img/stars\ background2.jpg);
+  background-size: contain;
+  background-attachment: fixed;
   height: 100%;
   padding: 1em 0 2.5em;
 }

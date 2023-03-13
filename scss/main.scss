@@ -50,11 +50,10 @@ body {
 		position: relative;
 		top: 0;
 		height: 100vh;
-		background-image: url(../img/stars\ background\ 1.png);
+		background-image: url(../img/stars\ background2.jpg);
 		background-position: center;
-		background-size: cover;
+		background-size: contain;
 		background-attachment: fixed;
-		// animation: showup 1.5s forwards;
 		z-index: -10;
 	}
 	&__logo {
@@ -412,7 +411,10 @@ body {
 }
 //=======================================
 .form {
-	background-color: $blue2;
+	background-image: url(../img/stars\ background2.jpg);
+	background-size: contain;
+	background-attachment: fixed;
+	// background-color: $blue2;
 	height: 100%;
 	padding: 1em 0 2.5em;
 }
