@@ -2,9 +2,14 @@
 
 @mixin respond-small {
 	@media (min-width: 576px) {
-		
 		.aboutme__text p {
 			padding: 0 3em;
 		}
+		.cookie-box {
+			font-size: 2rem;
+		}
+		.cookie-btn {
+		}
+		
 	}
 }

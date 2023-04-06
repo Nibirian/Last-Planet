@@ -176,7 +176,18 @@
 			margin: 0.7em;
 			perspective: 800px;
 			overflow: hidden;
-
+			&-one {
+				visibility: hidden;
+				animation: showup 0.5s 0.5s forwards;
+			}
+			&-two {
+				visibility: hidden;
+				animation: showup 0.5s 0.7s forwards;
+			}
+			&-three {
+				visibility: hidden;
+				animation: showup 0.5s 0.9s forwards;
+			}
 			&:hover {
 				.info__card-front {
 					// transform: rotateY(-180deg);

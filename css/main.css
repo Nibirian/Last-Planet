@@ -1,3 +1,9 @@
+@keyframes show-cookies {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes showup {
   0% {
     opacity: 0;
@@ -312,7 +318,7 @@ body {
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  margin: 7em 1.5em 1em;
+  margin: 10em 1.5em 1em;
   cursor: default;
   z-index: 5;
 }
@@ -325,7 +331,7 @@ body {
   position: relative;
   align-self: center;
   min-width: 282px;
-  max-width: 30em;
+  max-width: 20em;
   width: 100%;
   height: 20em;
   margin: 0.7em;
@@ -365,14 +371,15 @@ body {
           backdrop-filter: blur(2px);
 }
 .mobile__card-front-title {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  font-weight: 500;
   margin-top: 0em;
   padding: 1em 0em 0.5em;
   margin: 0 0.5em;
 }
 .mobile__card-front-text p {
-  font-size: 2.2rem;
-  margin: 0.3em;
+  font-size: 2rem;
+  margin: 0.3em 1em;
 }
 .mobile__card-front-info {
   position: absolute;
@@ -438,12 +445,18 @@ body {
   opacity: 0.2;
 }
 
+.btn-portfolio-box {
+  margin: 0 1.5em;
+}
+
 .btn-portfolio {
   position: relative;
-  align-self: center;
+  display: flex;
+  justify-content: center;
   min-width: 10em;
+  max-width: 18em;
   padding: 1em;
-  margin: 2em;
+  margin: 2em auto;
   font-size: 1.8rem;
   border-radius: 10px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
@@ -747,6 +760,40 @@ input::-webkit-inner-spin-button {
   color: rgb(219, 190, 26);
 }
 
+.cookie-box {
+  position: fixed;
+  bottom: 0;
+  padding: 0.5em 0.5em 0em;
+  max-height: 14em;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  border-top: 1px solid rgba(219, 190, 26, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  animation: show-cookies 0.5s 0.5s forwards;
+  z-index: 1000;
+}
+
+.cookie-btn {
+  margin: 1em;
+  padding: 0.4em 1em;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: 1px solid rgba(219, 190, 26, 0.7);
+  border-radius: 4px;
+  color: #dbd9d3;
+  background-color: rgba(11, 19, 65, 0.8);
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.cookie-btn:hover {
+  background-color: #01051c;
+  color: rgb(219, 190, 26);
+}
+
 .politics {
   height: 100%;
   width: 100%;
@@ -798,6 +845,9 @@ a {
   .aboutme__text p {
     padding: 0 3em;
   }
+  .cookie-box {
+    font-size: 2rem;
+  }
 }
 @media (min-width: 768px) {
   .aboutme__text p {
@@ -823,6 +873,11 @@ a {
     display: flex;
     justify-content: space-around;
     margin: 0 7em;
+  }
+  .info__boxes-mobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 @media (min-width: 992px) {
@@ -1002,6 +1057,18 @@ a {
     margin: 0.7em;
     perspective: 800px;
     overflow: hidden;
+  }
+  .info__card-one {
+    visibility: hidden;
+    animation: showup 0.5s 0.5s forwards;
+  }
+  .info__card-two {
+    visibility: hidden;
+    animation: showup 0.5s 0.7s forwards;
+  }
+  .info__card-three {
+    visibility: hidden;
+    animation: showup 0.5s 0.9s forwards;
   }
   .info__card:hover .info__card-front {
     opacity: 0;

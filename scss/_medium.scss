@@ -26,5 +26,10 @@
 			justify-content: space-around;
 			margin: 0 7em;
 		}
+		.info__boxes-mobile {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
 	}
 }
