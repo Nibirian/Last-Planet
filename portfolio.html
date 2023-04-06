@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/140c348a97.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./css/hamburger.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<title>Last Planet</title>
+	</head>
+	<body>
+		<header id="main" class="hero">
+			<div class="nav-bar">
+				<button class="hamburger hamburger--collapse" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+				<a href="#main">
+					<div class="title-nav hide">
+						<img
+							class="title-nav-image"
+							src="./img/logo_napis.png"
+							alt="Last Planet"
+						/></div
+				></a>
+				<div class="phonecall">
+					<a href="tel:727-658-369"><i class="fa-solid fa-phone"></i></a>
+				</div>
+			</div>
+
+			<nav class="nav nav-mobile">
+				<a class="nav-link" href="#offer">Oferta</a>
+				<a class="nav-link" href="#aboutme">O mnie</a>
+				<a class="nav-link" href="portfolio.html">Portfolio</a>
+				<a class="nav-link" href="#findme">Kontakt</a>
+			</nav>
+
+			<div class="header__img">
+				<nav class="nav nav-desktop">
+					<div><a class="hero__logo-desktop" href="/index.html"></a></div>
+					<div><a class="hero__logo-desktop2" href="/index.html"></a></div>
+					<a class="nav-link glass" href="./index.html#offer">Oferta</a>
+					<a class="nav-link glass" href="./index.html#form">Wycena</a>
+					<a class="nav-link glass" href="./index.html#aboutme">O mnie</a>
+					<a class="nav-link glass" href="portfolio.html">Portfolio</a>
+
+					<a class="nav-link glass" href="./index.html#findme">Kontakt</a>
+				</nav>
+
+				<div class="hero__img">
+					<div><a class="hero__logo" href="/index.html"></a></div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<button onclick="topFunction()" class="goToTopBtn glass" title="Na górę">
+				<i class="fa-regular fa-circle-up"></i>
+			</button>
+			<section class="portfolio">
+
+			</section>
+			<section class="findme" id="findme">
+				<div class="findme__box">
+					<i class="fa-solid fa-compass"></i>
+					<div class="findme__box-title">
+						<h2>Gdzie mnie znajdziesz?</h2>
+					</div>
+					<div class="findme__box-contact">
+						<a href="tel:727-658-369">
+							<div class="findme__boxes">
+								<i class="fa-solid fa-phone"></i>
+								<p>727-658-369</p>
+							</div></a
+						>
+						<a href="mailto:lastplanet.office@gmail.com">
+							<div class="findme__boxes">
+								<i class="fa-solid fa-envelope"></i>
+								<p>lastplanet.office@gmail.com</p>
+							</div></a
+						>
+					</div>
+					<div class="findme__box-icons">
+						<a
+							href="https://www.facebook.com/profile.php?id=100090988423954"
+							target="_SEJ"
+							rel="noreferrer"
+							><i class="fa-brands fa-facebook-f"></i
+						></a>
+						<a
+							href="https://www.linkedin.com/in/patryk-porada-648b29268/"
+							target="_SEJ"
+							rel="noreferrer"
+							><i class="fa-brands fa-linkedin-in"></i
+						></a>
+					</div>
+				</div>
+			</section>
+
+			<!-- <div class="cookie-box">
+	<p>Nasza strona korzysta z ciasteczek :)</p>
+	<button class="cookie-btn">Akceptuj</button>
+</div> -->
+
+			<footer class="footer">
+				<p class="footer">
+					&copy; <span class="footer__year"></span> Last Planet
+				</p>
+			</footer>
+		</main>
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+		<script src="./js/script.js"></script>
+	</body>
+</html>

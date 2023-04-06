@@ -1,0 +1,30 @@
+@use "./colors" as *;
+
+@mixin respond-medium {
+	@media (min-width: 768px) {
+		.aboutme__text p {
+			padding: 0 7em;
+		}
+		.info__boxes {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.info__card {
+			min-width: 320px;
+		}
+		.header__text p {
+			font-size: 1.8rem;
+		}
+		.nav-link {
+			font-size: 3rem;
+		}
+		.form__question {
+			justify-content: space-around;
+		}
+		.findme__box-icons {
+			display: flex;
+			justify-content: space-around;
+			margin: 0 7em;
+		}
+	}
+}

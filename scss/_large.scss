@@ -1,0 +1,17 @@
+@use "./colors" as *;
+
+@mixin respond-large {
+	@media (min-width: 992px) {
+		.bg-icon {
+			position: absolute;
+			display: block;
+			top: 1%;
+			right: 5%;
+			font-size: 28rem;
+			color: rgb(3, 3, 3);
+			// opacity: 0.6;
+			animation: bg-icon-move 50s infinite linear;
+			z-index: 0;
+		}
+	}
+}
