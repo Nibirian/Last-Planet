@@ -48,7 +48,7 @@
 				<a class="nav-link" href="#offer">Oferta</a>
 				<a class="nav-link" href="#form">Wycena</a>
 				<a class="nav-link" href="#aboutme">O mnie</a>
-				<a class="nav-link" href="portfolio.html">Portfolio</a>
+				<a class="nav-link" href="./portfolio.html">Portfolio</a>
 				<a class="nav-link" href="#findme">Kontakt</a>
 			</nav>
 
@@ -58,7 +58,7 @@
 					<div><a class="hero__logo-desktop2" href="./index.html"></a></div>
 					<a class="nav-link glass" href="#form">Wycena</a>
 					<a class="nav-link glass" href="#aboutme">O mnie</a>
-					<a class="nav-link glass" href="portfolio.html">Portfolio</a>
+					<a class="nav-link glass" href="./portfolio.html">Portfolio</a>
 					<a class="nav-link glass" href="#findme">Kontakt</a>
 				</nav>
 
@@ -77,11 +77,11 @@
 						<h1 class="main-text">
 							<span>Profesjonalne</span>
 							<div class="message">
-							  <div>strony Internetowe</div>
-							  <div>podejście do klienta</div>
-							  <div>wsparcie techniczne</div>
+								<div>strony Internetowe</div>
+								<div>podejście do klienta</div>
+								<div>wsparcie techniczne</div>
 							</div>
-						  </h1>
+						</h1>
 					</div>
 
 					<div class="info__boxes">
@@ -180,8 +180,10 @@
 								<h2 class="mobile__card-front-title">Strony Internetowe</h2>
 								<div class="underline3"></div>
 								<div class="mobile__card-front-text">
-									<p>Nie tylko atrakcyjne wizualnie, ale również perfekcyjne
-									wydajnościowo.</p>
+									<p>
+										Nie tylko atrakcyjne wizualnie, ale również perfekcyjne
+										wydajnościowo.
+									</p>
 								</div>
 								<p class="mobile__card-front-info">
 									<i class="fas fa-angle-double-right"></i>
@@ -215,8 +217,10 @@
 								<h2 class="mobile__card-front-title">Pozycjonowanie</h2>
 								<div class="underline3"></div>
 								<div class="mobile__card-front-text">
-									<p>W celu dobrego prosperowania strony niezbędne jest jej
-									wypromowanie.</p>
+									<p>
+										W celu dobrego prosperowania strony niezbędne jest jej
+										wypromowanie.
+									</p>
 								</div>
 								<p class="mobile__card-front-info">
 									<i class="fas fa-angle-double-right"></i>
@@ -237,8 +241,9 @@
 								<h2 class="mobile__card-front-title">Copywriting</h2>
 								<div class="underline3"></div>
 								<div class="mobile__card-front-text">
-									<p>Jednym z kluczy do sukcesu sa dobrze przygotowane opisy
-									produktów, kategorii i wiele innych.
+									<p>
+										Jednym z kluczy do sukcesu sa dobrze przygotowane opisy
+										produktów, kategorii i wiele innych.
 									</p>
 								</div>
 								<p class="mobile__card-front-info">
@@ -257,7 +262,6 @@
 							><p>Zobacz portfolio</p></a
 						>
 					</div>
-
 				</div>
 				<i class="bg-icon fa-solid fa-satellite"></i>
 			</section>
@@ -380,7 +384,6 @@
 						<h2>Masz pytanie?</h2>
 						<p>Zajrzyj do sekcji "kontakt", albo skorzystaj z formularza!</p>
 					</div>
-					
 				</div>
 				<form
 					action="https://api.web3forms.com/submit"
@@ -401,6 +404,7 @@
 							name="Imię / nazwa firmy"
 							id="name"
 							placeholder="Jan Kowalski Firma"
+							required
 						/>
 					</div>
 					<div class="contact__form-box">
@@ -413,7 +417,7 @@
 						/>
 					</div>
 					<div class="contact__form-box">
-						<label for="mail">Numer telefonu</label>
+						<label for="phone">Numer telefonu</label>
 						<input
 							type="number"
 							name="Numer telefonu"
@@ -429,6 +433,11 @@
 							placeholder="Twoja wiadomość"
 						></textarea>
 					</div>
+					<input
+						type="hidden"
+						name="redirect"
+						value="https://web3forms.com/success"
+					/>
 					<div class="contact__form-box">
 						<label for="accept">
 							<p>

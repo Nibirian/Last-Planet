@@ -2,11 +2,7 @@
 
 @mixin respond-small {
 	@media (min-width: 576px) {
-		.contact__form-btn {
-			padding: 1em;
-			font-size: 1.5rem;
-			width: 7em;
-		}
+		
 		.aboutme__text p {
 			padding: 0 3em;
 		}
